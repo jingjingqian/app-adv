@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/picshower_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="1.0dip" >
+
+        <com.adv.yifangadv.tools.ZoomImageView
+            android:id="@+id/mImageView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/defaultproduct1" />
+
+        <RelativeLayout
+            android:id="@+id/photo_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/fanghui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dip"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/btn_return"
+                />
+
+            <Button
+                android:id="@+id/baocun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="保存"
+                android:textColor="#000000"
+                android:textSize="14.0sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
